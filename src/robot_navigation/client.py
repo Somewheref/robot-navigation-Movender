@@ -97,7 +97,6 @@ class NavigationClient:
             elif self.robot_controller.emergency_stoped:
                 # generate a new path
                 self.current_path = self.path_planner.astar(self.goal_position)
-                self.executing_path = True
                 self.robot_controller.reset_emergency_stop()
 
     def visualization_timer_callback(self, event):

@@ -26,8 +26,8 @@ class GridManager:
         self.view_center_y = float(self.debug_grid_size // 2)
         
         # Clear zone parameters
-        self.clear_zone_size = 5
-        self.clear_zone_offset = -3   # avoid the robot itself
+        self.clear_zone_size = 4
+        self.clear_zone_offset = -4   # avoid the robot itself
         self.grid_center = self.world_to_grid(0, 0)
         
         self.last_update_pose = None

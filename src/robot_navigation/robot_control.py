@@ -200,8 +200,8 @@ class RobotController:
             
     def emergency_stop(self):
         """Emergency stop the robot."""
-        self.publish_cmd_vel(0, 0)
-        self.set_freeze_state(True)
+        # self.publish_cmd_vel(0, 0)
+        # self.set_freeze_state(True)
         self.emergency_stoped = True
 
     def check_emergency_stop(self):
